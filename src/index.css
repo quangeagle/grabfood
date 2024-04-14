@@ -1,0 +1,322 @@
+.detail{
+    display: inline-block;
+}
+
+/* Header Detail */
+Header{
+    padding: 0px 40px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.header_detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000; /* Để đảm bảo header_detail luôn ở trên cùng */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Cân đối nội dung trong header_detail */
+ 
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+.header_detail img{
+    width: 142px;
+    height: 50px;
+    object-fit: cover;
+}
+.logo input{
+    width: 238px;
+    height: 40px;
+}
+.bag{
+    display: flex;
+    flex-direction: row;
+    margin-right: 250px;
+}
+.bag p{
+    margin-left: 20px;
+    padding: 3px;
+    border: 0.5px rgb(199, 193, 193) solid;
+}
+.bag select{
+    width: 60px;
+}
+.restaurant{
+    display: flex;
+    flex-direction: row;
+   margin-top: 70px;
+}
+.restaurant p:nth-child(1),
+.restaurant p:nth-child(3) {
+    color: #00a5cf;
+    
+}
+.restaurant p:nth-child(1),
+.restaurant p:nth-child(3),
+.restaurant p:nth-child(5){
+    font-size: 20px;
+    padding: 10px;
+}
+.restaurant p:nth-child(2),
+.restaurant p:nth-child(4) {
+    color: #a4a6a7;
+    margin-top: 31px;
+    
+}
+.name_store{
+    margin-top: -10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.DanhGia{
+    display: flex;
+    flex-direction: row;
+  
+}
+.DanhGia div:nth-child(1),
+.DanhGia div:nth-child(2){
+display: flex;
+flex-direction: row;
+
+}
+.DanhGia div:nth-child(1){
+    margin-right: 30px;
+}
+.Clock p{
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: -10px;
+}
+.voucher1 p,
+.Voucher2 p{
+    display: inline-block;
+    margin-right: 30px;
+}
+.voucher1,
+.Voucher2{
+    margin-top: -15px;
+}
+.icon{
+    margin-right: 30px;
+}
+.icon2{
+    margin-left: 80px;
+}
+.all div{
+    margin-top: -5dp;
+}
+.rice{
+    margin-top: -20px;
+   
+}
+.nav1 {
+    position: sticky;
+    top: 70px; 
+    background-color: white;
+    z-index: 999; 
+    display: inline-block;
+    width: 100%;
+}
+.nav1 ul {
+    list-style: none; 
+    display: flex; 
+    padding: 0; 
+    margin: 0; 
+    justify-content: space-around; 
+}
+
+/* Định dạng cho các mục trong menu */
+.nav1 ul li {
+    cursor: pointer; 
+    padding: 10px; 
+    font-size: 1.14285714rem;
+    line-height: 1.5;
+    margin: 20px 20px;
+}
+
+
+.nav1 ul li.active {
+    color: #00b14f;
+    font-weight: 500;
+}
+
+
+.active {
+    color: red; 
+    font-weight: bold; 
+  }
+
+  .product
+  {
+    display: inline-block;
+  }
+  .product div{
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+/* gio hang */
+.app-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .main-content {
+    padding: 20px;
+    background-color: brown;
+  }
+  
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    display: none; 
+    transition: transform 0.3s ease-in-out; 
+    overflow-y: auto; 
+    z-index: 1005; 
+    overflow-x: hidden;
+}
+.cart button{
+    margin: 30px 20px ;
+}
+
+.cart.open {
+    display: block; /* Hiển thị giỏ hàng khi được mở */
+    transform: translateX(0); /* Đặt vị trí giỏ hàng bên cạnh màn hình */
+    width: 516px !important;
+}
+
+.cart.open {
+    transform: translateX(0);
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1004; 
+    display: none; 
+    opacity: 0; 
+}
+.overlay.show {
+    display: block;
+    opacity: 0.1;
+}
+.app-container{
+    display: flex;
+    flex-direction: row;
+    width: 314px;
+    border: 1px black solid;
+    border-radius: 2px;
+    padding: 16px;
+    margin-left: 30px;
+    height: 340px;
+    margin-right: 40px;
+    background-color: white;
+
+
+}
+.app-container1 img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px ;
+}
+.app-container div{
+    margin-top: 0px;
+}
+.app-container1{
+    margin-right: 30px;
+}
+.app-container2 div{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px 10px;
+    }
+.app-container2 div p{
+    margin-right: 30px;
+}
+.SanPham{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 490px;
+    height: 272px;
+    border-top: 1px black solid;
+    border-bottom: 10px rgb(182, 180, 180) solid;
+    margin-top: 10px;
+}
+.SanPham img{
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+}
+.SanPham1{
+    margin: -12px 10px;
+}
+.CheckBox{
+    margin: 10px 30px;
+}
+.CheckBoxMiNi{
+    border-bottom: 1px black solid;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+  .eagle{
+    background-color: #f6f6f6;
+    padding-left: 100px;
+  }
+  .bag2 {
+    border-top: 0.1px solid #b3b3b3;
+    margin-top: 240px;
+    position: sticky; 
+    bottom: 0;
+    left: 0; 
+    width: 100%; 
+    overflow: hidden; 
+    background-color: white;
+}
+.buttondathang{
+    cursor: pointer;
+    width: 89%;
+    height: 50px;
+    background-color: #00b14f;
+    color: #f6f6f6;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+.calendericon{
+    width: 30%;
+    height: 10%;
+  }
+
+.seclect{
+  width: 100%;
+  border-radius: 9px;
+  height: 60px;
+}
+.seclect:hover{
+  outline: none;
+  border:2px solid #00b14f;
+}
+.seclect:active{
+  border: none;
+  border:2px solid #00b14f;
+}
+.calendar,.calendericon{
+    display: flex;
+  }
